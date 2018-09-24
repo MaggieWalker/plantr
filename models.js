@@ -28,8 +28,4 @@ Plot.belongsToMany(Vegetable, {through: 'harvest'});
 Gardener.belongsTo(Vegetable, {as: 'favorite_vegetable'});
 
 
-Vegetable.create({name: 'eggplant', color: 'purple', planted_on: '2018-08-10'})
-  .then(Vegetable.create({name: 'gourd', color: 'yellow', planted_on: '2018-10-24'}))
-
-
-module.exports = db;
+module.exports = db, Vegetable, Gardener, Plot;

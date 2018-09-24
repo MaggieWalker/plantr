@@ -6,6 +6,7 @@ const db = require('./models')
 db.sync({force: true})
 .then(() => {
     console.log('It synced!!!')
+
 })
 .catch((err) => {
     console.log(`It is broken: ${err}`)
